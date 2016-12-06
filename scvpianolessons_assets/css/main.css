@@ -1633,7 +1633,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #FE1F1F;
+			background: #fe6767;
 		}
 
 		input[type="button"]:active,
