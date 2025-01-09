@@ -20,19 +20,44 @@ import TextReveal from '@/components/TextReveal.astro'
        -->
     </div>
 
+    <!--<form method="post" action="//formspree.io/andrew.martin@berkeley.edu">
+      <div class="fields">
+        <div class="field half">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="field half">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Website contact" />
+        <input type="text" name="_gotcha" style="display:none" />
+    
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" class="primary" /></li>
+      </ul>
+    </form> -->
+
+
+
     
           <form method="post" action="//formspree.io/andrew.martin@berkeley.edu" class="space-y-8">
             <div>
               <div class="pb-4">
                   <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-black dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@placeholder.com" required>
+                  <input type="text" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-black dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@placeholder.com" required>
               </div>
               <div class="sm:col-span-2 pb-4">
                   <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                  <textarea id="message" rows="6" class="text-black block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your message here..."></textarea>
+                  <textarea name="message" id="message" rows="6" class="text-black block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your message here..."></textarea>
               </div>
             
-              <button type="submit" value="Send Message" class="bg-[#d97706] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-[#d97706]">Send message</button>
+              <button class="bg-[#d97706] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-[#d97706]"><input type="submit" value="Send Message"></button>
               
           </form>
       </div>
