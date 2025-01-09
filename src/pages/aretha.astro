@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '@/layouts/Layout.astro'
+import Hero from '@/sections/Hero.astro'
+import About from '@/sections/About.astro'
+import Skills from '@/sections/Skills.astro'
+import Projects from '@/sections/Projects.astro'
+import Download from '@/sections/Download.astro'
+import Card from '@/components/Card.astro'
+import projectOne from '@/images/project-1.png'
+import Header2 from'@/components/Header2.astro'
+
+---
+
+<Layout title="Andy Martin">
+  <Header2 />
+  <main class="bg-dark-blue text-steel-blue py-16 md:py-40 h-auto my-auto mx-auto sm:px-16">
+
+    <div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4">
+      
+      <div class="object-cover pb-6">
+        <Image class="items-center" src={projectOne} alt="A bird sitting on a nest of eggs." />
+    </div>
+    
+    <Download  {Title}="Aretha Franklin Piano Intro Concepts FREE PDF" >
+      <p> Contents:</p>
+
+        <p>-Transcription of Aretha's "You Send Me" intro</p>
+        
+        <p>-Drop 2 Triad Pair Exercise</p>
+        
+        <p>-Compose your own intro checklist</p>
+      
+    </Download>
+  </div>
+  </main>
+</Layout>

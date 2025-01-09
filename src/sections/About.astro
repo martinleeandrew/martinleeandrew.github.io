@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import  Me  from '@/images/me.jpg';
+import  arrow  from '@/images/arrow.png'
+---
+
+<section
+  data-about
+  class="bg-dark-blue text-steel-blue pt-40 lg:pt-52 xl:pt-60 px-8 pb-16"
+>
+<div class="flex lg:flex-row flex-col-reverse mx-auto items-center place-content-evenly">
+  <div class="text-3xl lg:text-4xl 2xl:text-5xl font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto text-white pt-4">
+  
+  
+    I'm a jazz pianist and music educator. Explore my work below, or 
+    
+    <button class="bg-[#d97706] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-[#d97706] sm:mx-auto center">
+    schedule a lesson.
+    </button> 
+    
+    <img class="inline-block items-center h-12 sm:h-24" src="/images/arrow.png">
+  
+  </div>
+<div>
+  <Image class="items-center md:w-[40vw]" src={ Me } alt="Me" />
+    </div>
+  
+  </div>
+</section>

@@ -1,0 +1,130 @@
+---
+import TextReveal from '@/components/TextReveal.astro'
+import UCB from '@/images/UCB.png'
+import { Image } from 'astro:assets'
+---
+
+<section
+  data-skills
+  class="bg-dark-blue text-steel-blue py-16 lg:py-52 xl:py-60 px-8 sm:px-16 md:px-20 lg:px-24 xl:px-32"
+>
+  <ul
+    class="flex flex-wrap justify-center gap-x-8 gap-y-4 lg:gap-x-16 lg:gap-y-8"
+  >
+    <li>
+       <div class="text-3xl lg:text-4xl 2xl:text-5xl  font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto text-center text-white"
+      >
+        MA 2016
+      <div class="flex-col items-center text-center">
+      <img class="md:w-[15vw] w-[30vw] items-center" src="/images/UCB.png">
+    </div>
+    </li>
+    <li>
+      <TextReveal
+      class="text-3xl lg:text-4xl 2xl:text-5xl  font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto text-center"
+      color="bg-gradient-to-r from-white to-white text-white/50"
+    >
+      BM 2014
+    </TextReveal>
+      <div class="flex items-center">
+      <img class="md:w-[15vw] w-[30vw] items-center" src="/images/CSUN.png">
+    </div>
+    </li>
+    
+   <!--  <li>
+      <TextReveal
+        class="text-3xl lg:text-4xl 2xl:text-5xl font-serif font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto"
+        color="bg-gradient-to-r from-white to-white text-white/50"
+      >
+        React.js & Astro.js
+      </TextReveal>
+    </li>
+    <li>
+      <TextReveal
+        class="text-3xl lg:text-4xl 2xl:text-5xl font-serif font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto"
+        color="bg-gradient-to-r from-white to-white text-white/50"
+      >
+        Responsive Design
+      </TextReveal>
+    </li>
+    <li>
+      <TextReveal
+        class="text-3xl lg:text-4xl 2xl:text-5xl font-serif font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto"
+        color="bg-gradient-to-r from-white to-white text-white/50"
+      >
+        UI/UX Principles
+      </TextReveal>
+    </li>-->
+  </ul>
+  <div class="max-w-2xl mb-6 font-sans tracking-tight text-white/95 pt-10 text-left mytext">
+
+    <!--<p class="myfont font-bold text-left lg:ml-16 text-3xl md:text-5xl mb-6">Resume</p> -->
+    
+    
+                      
+      <ul class="list border-l pl-1">
+        <li>
+        
+    <div class="lg:ml-16 mytext"></div>
+          <span class="text-xl font-bold ">Associate Faculty<br></span> <span class="text-xl italic">MiraCosta College</span> <span class="text-l">(January 2024 - Present)</span>
+        <span class="flex flex-row items-start justify-start mb-4 md:mb-6">
+          <span class="ml-3">
+        </span>
+        </span>
+        </li>
+       
+       
+        <li>
+          <span class="text-xl font-bold">Faculty, Piano and Jazz Improvisation<br></span> <span class="text-xl italic">Little Mission Studio</span> <span class="text-l">(February 2019 - January 2024)</span>
+        <span class="flex flex-row items-start justify-start mb-4 md:mb-6">
+          <span class="ml-3">
+        </span>
+        </span>
+        </li>
+    
+        <li>
+          <span class="text-xl font-bold">Faculty, Piano<br></span> <span class="text-xl italic">Crowden Music Center</span> <span class="text-l">(January 2020 - June 2022)</span>
+        <span class="flex flex-row items-start justify-start mb-4 md:mb-6">
+          <span class="ml-3">
+        </span>
+        </span>
+        </li>
+
+        <li>
+          <span class="text-xl font-bold">Instructor, Music Theory<br></span> <span class="text-xl italic">University of California, Berkeley</span> <span class="text-l">(August 2015 - June 2016)</span>
+          <span class="flex flex-row items-start justify-start ">
+            <span class="ml-3">
+          </span>
+          </span>
+          </li>
+      </div>
+    </TextReveal>
+        <!--<p class="myfont font-bold text-left lg:ml-16 text-3xl md:text-5xl mb-6 mt-6">Education</p> -->
+    
+    
+    <!--<div class="lg:ml-16 mytext">
+                      
+      <ul class="list">
+        <li>
+          <span class="text-xl font-bold">MA Music Composition<br></span> <span class="text-xl italic">University of California, Berkeley</span>
+        </li>
+        <li>
+          <span class="text-xl font-bold">BM Music Composition<br></span> <span class="text-xl italic">California State University, Northridge</span>
+        </li>
+    
+    </div> -->
+    
+    </div>
+</section>
+
+<script>
+  import { DOMLoaded } from '@/ts/events'
+  import { fadeOut } from '@/ts/animations'
+
+  DOMLoaded(() => {
+    const trigger = document.querySelector('[data-skills]') as HTMLElement
+    const target = trigger.querySelector('ul') as HTMLElement
+
+    fadeOut(trigger, target)
+  })
+</script>
