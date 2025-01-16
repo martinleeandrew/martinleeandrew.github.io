@@ -1,7 +1,39 @@
-<section>
-    <div class="flex w-full h-full items-center text-center font-bold text-4xl pt-16 bg-dark-blue text-white mx-auto">
-        <div class="text-cente mx-auto">
-    <h1 class="text-center mx-auto"> Check your email for the download link. Thanks for your interest in my free music resources. </h1>
-     </div>
+---
+import { Image } from 'astro:assets';
+import  Me  from '@/images/me.jpg';
+import  arrow  from '@/images/arrow.png'
+---
+
+<section
+  data-about
+  class="bg-dark-blue text-steel-blue pt-16 lg:pt-36 xl:pt-36 px-8 pb-16"
+>
+<div class="flex lg:flex-row flex-col-reverse mx-auto items-center place-content-evenly">
+
+<div class="flex-col">
+  <div class="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-semibold max-w-[30ch] leading-normal lg:leading-normal 2xl:leading-normal mx-auto text-white pt-4">
+  
+  
+    <slot />
+    </div>
+
+    <div>
+      <a href="https://cal.com/andymartin"><button class="bg-[#d97706] hover:bg-blue-700 text-white font-bold py-2 px-2 xs:px-4 rounded hover:bg-white hover:text-[#d97706] sm:mx-auto center mt-6 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl leading-normal lg:leading-normal 2xl:leading-normal mx-auto">
+        Schedule a lesson
+        </button> </a>
+        
+        <img class="relative -top-4 md:-top-6 inline-block items-center h-12 xs:h-16 sm:h-24" src="/images/arrow.png">
+    </div>
 </div>
+    
+
+    <div>
+      <Image class="items-center md:w-[40vw]" src={ Me } alt="Me" />
+        </div>
+    
+  
+  </div>
+
+  
+  </div>
 </section>

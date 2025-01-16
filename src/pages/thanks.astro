@@ -6,16 +6,45 @@ import Skills from '@/sections/Skills.astro'
 import Projects from '@/sections/Projects.astro'
 import Contact from '@/sections/Contact.astro'
 import Header2 from'@/components/Header2.astro'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'free-astro-components'
 import TY from'@/sections/TY.astro'
----
 
+---
+<style is:global>
+  :root {
+  --ac-primary: 217, 119, 6; /* New primary color */
+  }
+</style> 
 <Layout title="Andy Martin">
-  <main>
+  
+  <main class="bg-dark-blue text-steel-blue h-screen mx-auto sm:px-16">
     <Header2/>
-   <TY />
-    <About >Your Download has been Thanks for your interest in my free music resources.</About>
-    <Skills />
-    <Projects />
-    <Contact />
+    <div class="invisible">
+      <Button class ="" label="Open Modal" data-modal-trigger="thanks" />
+      </div>
+      
+      <div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4">
+        <Modal id="thanks">
+          <ModalHeader>
+            <h4>Confirmation</h4>
+          </ModalHeader>
+          <ModalBody>
+            <p>
+              Success! Check your email for the download link.
+            </p>
+          </ModalBody>
+          <ModalFooter>
+            <Button label="Close" data-modal-close />
+          </ModalFooter>
+        </Modal>
+   <TY >Thanks for your interest in my free music resources!</TY>
   </main>
+  <script>
+    import { openModal, closeModal } from 'free-astro-components';
+  
+    const modal = document.querySelector('#thanks');
+  
+    
+      openModal(modal);
+  </script>
 </Layout>

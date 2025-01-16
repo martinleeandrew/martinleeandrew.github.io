@@ -13,6 +13,7 @@ export default {
       'light-gray': '#E0E0E0',
       'steel-blue': '#B0C4DE',
       'slate-gray': '#708090',
+      "ac-primary": "var(--ac-primary)",
     },
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
