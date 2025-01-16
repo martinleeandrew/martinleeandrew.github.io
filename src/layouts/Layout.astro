@@ -26,7 +26,9 @@ const { title } = Astro.props
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+  :root {
+    --ac-primary: 217, 119, 6; /* New primary color */
+  }
   html {
     @apply scroll-smooth;
   }
@@ -46,4 +48,5 @@ const { title } = Astro.props
   p {
     @apply text-pretty;
   }
+  
 </style>
