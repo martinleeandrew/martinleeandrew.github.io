@@ -17,13 +17,15 @@ import TY from'@/sections/TY.astro'
 </style> 
 <Layout title="Andy Martin">
   
-  <main class="bg-dark-blue text-steel-blue h-screen mx-auto sm:px-16">
+  <main class="bg-dark-blue text-steel-blue h-screen mx-auto sm:px-16 ">
     <Header2/>
-    <div class="invisible">
+<div class="lg:pb-[15vh] pb-6" ></div>
+
+     <!-- <div class="invisible">
       <Button class="" label="Open Modal" data-modal-trigger="thanks" />
       </div>
       
-      <!--<div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4 ">
+    <div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4 ">
         <Modal id="thanks">
           <ModalHeader>
             <h4>Confirmation</h4>
@@ -38,7 +40,7 @@ import TY from'@/sections/TY.astro'
           </ModalFooter>
         </Modal>
         </div> -->
-   <TY ><p class="text-lg">Success! Now check your email for the download link.</p>I offer lessons in jazz harmony, ear training, and more.</TY>
+   <TY ><p class="text-lg pb-6">Success! Now check your email for the download link.</p>I offer lessons in jazz harmony, ear training, and more.</TY>
   </main>
   <!--<script>
     import { openModal, closeModal } from 'free-astro-components';
