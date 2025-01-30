@@ -13,10 +13,10 @@ import Header2 from'@/components/Header2.astro'
 ---
 
 <Layout title="Andy Martin">
-  <Header2 />
-  <main class="bg-dark-blue text-steel-blue py-16 md:py-40 h-auto my-auto mx-auto sm:px-16">
+  <main class="bg-dark-blue text-steel-blue w-screen h-auto min-h-screen mx-auto sm:px-16 ">
+    <Header2/>
 
-    <div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4">
+    <div class="flex flex-col md:flex-row mx-auto place-content-evenly px-4 py-6 md:py-[12vh]">
       
       <div class="object-cover pb-6">
         <Image class="items-center rounded" src={chords} alt="thumbnail" />
